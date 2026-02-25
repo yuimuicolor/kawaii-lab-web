@@ -10,9 +10,8 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
   return (
-    <>
-      <ScrollToTop />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
@@ -22,7 +21,6 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
   );
 };
 
