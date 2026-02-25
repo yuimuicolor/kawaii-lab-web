@@ -18,6 +18,7 @@ body
 ========================= */
 
 body {
+  min-width: 320px;
   font-family: 'Pretendard',
     'Afacad',
     -apple-system, BlinkMacSystemFont,

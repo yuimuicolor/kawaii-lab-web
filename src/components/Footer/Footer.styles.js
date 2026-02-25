@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../styles/media";
 
 export const FooterWrap = styled.footer`
   background: #4b4b4b;
@@ -14,6 +15,13 @@ export const Inner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  ${media.tablet} {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
 `;
 
 /* 왼쪽 */
@@ -37,11 +45,16 @@ export const Copyright = styled.p`
 /* 오른쪽 */
 export const Right = styled.div`
   text-align: right;
+
+  ${media.tablet} {
+    text-align: center;
+  }
 `;
 
 export const FollowTitle = styled.p`
   font-family: "Afacad", sans-serif;
   font-size: 40px;
+  line-height: 40px;
   font-weight: 700;
   margin-bottom: 16px;
 `;
@@ -50,11 +63,16 @@ export const SocialList = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 12px;
+
+  ${media.tablet} {
+    justify-content: center;
+    gap: 16px;
+  }
 `;
 
 export const SocialButton = styled.a`
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 
   display: flex;
   align-items: center;
@@ -63,13 +81,14 @@ export const SocialButton = styled.a`
   border-radius: 15px;
   background: #fff;
 
-  img {
-    width: 80px;
-  }
-
   transition: transform 0.15s ease;
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  ${media.tablet} {
+    width: 52px;
+    height: 52px;
   }
 `;

@@ -22,9 +22,9 @@ import banner5 from "../../assets/img/artist_ss.jpg";
 import banner6 from "../../assets/img/disco_1.jpeg";
 
 const noticeList = [
-  { id: 1, title: "공지사항 1", date: "2026.02.24" },
+  { id: 1, title: "공지사항asdasdasdasdasdasdasd 1", date: "2026.02.24" },
   { id: 2, title: "공지사항 2", date: "2026.02.23" },
-  { id: 3, title: "공지사항 3", date: "2026.02.20" },
+  { id: 3, title: "공지사항asdasdasdasdasdasdasdasddasdasdasdsadasdsa 3", date: "2026.02.20" },
   { id: 4, title: "공지사항 4", date: "2026.02.18" },
   { id: 5, title: "공지사항 5", date: "2026.02.03" },
   { id: 6, title: "공지사항 6", date: "2026.02.01" },

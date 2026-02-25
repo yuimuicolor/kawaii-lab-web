@@ -12,7 +12,7 @@ const Header = () => {
     <HeaderWrap>
       <Inner>
         <Logo to="/">
-          <img src={logo} alt="Kawaii Lab" />
+          <img src={logo} alt="Kawaii Lab" width="100%" />
         </Logo>
 
         <Gnb>

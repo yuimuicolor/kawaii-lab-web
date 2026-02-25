@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { media } from "../../styles/media";
 
 export const HeaderWrap = styled.header`
   width: 100%;
@@ -15,6 +16,16 @@ export const HeaderWrap = styled.header`
   &:hover {
     background: rgba(256, 256, 256, 1);
   }
+
+  ${media.tablet} {
+    height: 100px;
+    border-radius: 0 0 80px 80px;
+  }
+
+  ${media.mobile} {
+    height: 80px;
+    border-radius: 0 0 60px 60px;
+  }
 `;
 
 export const Inner = styled.div`
@@ -25,6 +36,15 @@ export const Inner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${media.tablet} {
+    padding: 0 40px;
+  }
+
+  ${media.mobile} {
+    padding: 0 24px;
+  }
+
 `;
 
 export const Logo = styled(NavLink)`
@@ -34,11 +54,32 @@ export const Logo = styled(NavLink)`
     height: 80px;
     display: block;
   }
+
+  ${media.tablet} {
+    img {
+      height: 60px;
+    }
+  }
+
+  ${media.mobile} {
+    img {
+      height: 32px;
+    }
+  }
 `;
 
 export const Gnb = styled.nav`
   display: flex;
   gap: 32px;
+
+  ${media.tablet} {
+    gap: 20px;
+  }
+
+  ${media.mobile} {
+    gap: 12px;
+  }
+
 `;
 
 export const GnbItem = styled(NavLink)`
@@ -59,5 +100,13 @@ export const GnbItem = styled(NavLink)`
   &:hover {
     opacity: 1;
     font-weight: 700;
+  }
+
+  ${media.tablet} {
+    font-size: 18px;
+  }
+
+  ${media.mobile} {
+    font-size: 14px;
   }
 `;
