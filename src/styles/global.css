@@ -64,4 +64,8 @@ button {
 img {
   max-width: 100%;
   display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
